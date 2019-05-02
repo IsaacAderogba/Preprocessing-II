@@ -205,9 +205,14 @@ nav {
   .navigation .logo h1 {
     font-size: 3.2rem;
   }
+  .navigation .nav-links {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+  }
   .navigation .nav-item a {
     font-size: 1.6rem;
-    padding: 0 2.4rem;
+    padding: 0 0;
   }
 }
 .footer {

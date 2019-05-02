@@ -19,16 +19,16 @@
   <!-- Start of Navigation -->
   <nav>
     <div class="navigation">
-    <div class="logo">
-      <h1>Fun Bus</h1>
+      <div class="logo">
+        <h1>Fun Bus</h1>
+      </div>
+      <ul class="nav-links">
+        <li class="nav-item"><a href="#">Home</a></li>
+        <li class="nav-item"><a href="#">About Us</a></li>
+        <li class="nav-item"><a href="#">Blog</a></li>
+        <li class="nav-item"><a href="#">Contact</a></li>
+      </ul>
     </div>
-    <ul class="nav-links">
-      <li class="nav-item"><a href="#">Home</a></li>
-      <li class="nav-item"><a href="#">About Us</a></li>
-      <li class="nav-item"><a href="#">Blog</a></li>
-      <li class="nav-item"><a href="#">Contact</a></li>
-    </ul>
-  </div>
   </nav>
   <!-- End of Navigation -->
 
@@ -112,7 +112,52 @@
       </div>
     </section>
     <!-- End of Pick Destination Section -->
-    
+
+    <!-- Start of Form Section -->
+    <section class="content-form">
+      <form action="#" method="post">
+
+        <!-- Select Destination -->
+        <label for="destination-select">Choose your destination:</label>
+        <select id="destination-select">
+          <option value="">-- Please choose an option --</option>
+          <option value="fun-in-the-sun">Fun In The Sun</option>
+          <option value="mountain-excursion">Mountain Excursion</option>
+          <option value="island-getaway">Island Getaway</option>
+        </select>
+
+        <!-- Enter Name -->
+        <div>
+          <label for="name">Name </label>
+          <input type="text" id="name" name="user_name">
+        </div>
+
+        <!-- Enter Email -->
+        <div>
+          <label for="mail">E-mail </label>
+          <input type="email" id="mail" name="user_mail">
+        </div>
+
+        <!-- Enter Phone -->
+        <div>
+          <label for="phone">Phone </label>
+          <input type="text" id="phone" name="phone">
+        </div>
+
+        <!-- Enter Message -->
+        <div>
+          <label for="msg">Sepcial Instructions </label>
+          <textarea id="msg" name="user_message"></textarea>
+        </div>
+
+        <!-- Submit -->
+        <div class="btn">
+          <button type="submit">Submit!</button>
+        </div>
+      </form>
+    </section>
+    <!-- End of Form Section -->
+
   </div>
   <!-- End of Home Container -->
 
