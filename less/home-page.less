@@ -101,4 +101,57 @@
       }
     }
   }
+
+
+// form section
+  form {
+    margin: 0 auto;
+    width: 100%;
+
+    padding: 3.2rem;
+    border: 2px dashed @navigation-border;
+    border-radius: 1.6rem;
+    margin-bottom: 3.2rem;
+  }
+  
+  form div + div {
+    margin-top: 1.6rem;
+  }
+  
+  label {
+    display: block;
+    font-family: 'Indie Flower', cursive;
+    font-size: 2.4rem;
+    margin-bottom: 0.8rem;
+  }
+
+  input, textarea , #destination-select {
+    font: 1.6rem 'Roboto';
+    width: 100%;
+    border: 1px solid @shark;
+    border-radius: 0.4rem;
+  }
+
+  input:focus, textarea:focus {
+    border-color: @eastern-blue;
+  }
+  
+  textarea {
+    vertical-align: top;
+    height: 12.8rem;
+  }
+  
+  button {
+       font-size: 1.6rem;
+       padding: 1.6rem 2.4rem;
+       background-color: @eastern-blue;
+       color: @white;
+       text-align: center;
+       border-radius: 1.2rem;
+       width: 100%;
+   
+       &:hover {
+           background-color: darken(@shark, 5%);
+       }
+  }
 }
