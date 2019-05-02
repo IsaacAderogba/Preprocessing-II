@@ -129,8 +129,13 @@ table {
 * {
   box-sizing: border-box;
 }
-html {
-  font-size: 62.5%;
+:root {
+  font-size: 67.5%;
+}
+@media (max-width: 500px) {
+  :root {
+    font-size: 72.5%;
+  }
 }
 html,
 body {
@@ -171,9 +176,13 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.navigation {
-  padding: 1.6rem 4.8rem;
+nav {
   border-bottom: 2px dashed #C0C0C0;
+}
+.navigation {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.6rem 3.2rem;
   display: flex;
   justify-content: space-between;
 }
@@ -184,9 +193,21 @@ img {
   display: inline-block;
 }
 .navigation .nav-item a {
-  padding: 0 1.6rem;
+  padding: 0 1rem;
   text-decoration: none;
   color: #212529;
+}
+@media (max-width: 500px) {
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navigation .logo h1 {
+    font-size: 3.2rem;
+  }
+  .navigation .nav-item a {
+    font-size: 1.4rem;
+  }
 }
 .footer {
   width: 100%;
@@ -200,7 +221,7 @@ img {
   padding: 20px;
 }
 .home {
-  padding: 0 4.8rem;
+  padding: 0 3.2rem;
 }
 .home .hero {
   border-bottom: 2px dashed #C0C0C0;

@@ -2,8 +2,12 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
+:root {
+	font-size: @defaultFontSize;
+  
+	@media @mobile {
+		font-size: @mobileFontSize;
+	}
 }
 
 html, body {
