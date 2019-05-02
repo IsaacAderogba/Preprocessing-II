@@ -134,7 +134,7 @@ table {
 }
 @media (max-width: 500px) {
   :root {
-    font-size: 72.5%;
+    font-size: 67.5%;
   }
 }
 html,
@@ -206,7 +206,8 @@ nav {
     font-size: 3.2rem;
   }
   .navigation .nav-item a {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    padding: 0 2.4rem;
   }
 }
 .footer {
@@ -247,6 +248,15 @@ nav {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+  .home .content-section .img-content,
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
@@ -259,12 +269,22 @@ nav {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
 .home .content-destination img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
 }
 .home .content-pick {
   padding-top: 30px;
@@ -277,10 +297,19 @@ nav {
   margin-bottom: 30px;
 }
 .home .content-pick .destination .btn {
-  font-size: 1.5rem;
-  padding: 1.2rem 2.4rem;
+  font-size: 1.6rem;
+  padding: 1.6rem 2.4rem;
   background-color: #17A2B8;
   color: #FFFFFF;
   text-align: center;
   border-radius: 1.2rem;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home .content-pick .destination {
+    width: 85%;
+  }
 }
