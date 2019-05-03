@@ -1,14 +1,14 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fun Bus Travel Agency - Solution</title>
 
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
-
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -16,59 +16,159 @@
 
 <body>
 
-  
-     
+  <!-- Start of Navigation -->
+  <nav>
+    <div class="navigation">
+      <div class="logo">
+        <h1>Fun Bus</h1>
+      </div>
+      <ul class="nav-links">
+        <li class="nav-item"><a href="#">Home</a></li>
+        <li class="nav-item"><a href="#">About Us</a></li>
+        <li class="nav-item"><a href="#">Blog</a></li>
+        <li class="nav-item"><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- End of Navigation -->
+
+  <!-- Start of Home Container -->
   <div class="container home">
-   
+
+    <!-- Start of Header -->
+    <header class="hero">
+      <img src="img/fun-bus.jpg" alt="Picture of toy bus">
+      <h2>Welcome To Fun Bus!</h2>
+      <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa ad assumenda vel ducimus cumque maxime
+        perspiciatis repellat voluptas blanditiis nam ut adipisci voluptatibus, deleniti aspernatur dolorem debitis
+        sapiente ipsum hic.</p>
+    </header>
+    <!-- End of Header -->
+
+    <!-- Start of Content Section -->
     <section class="content-section">
+
+      <!-- Content Piece 1 -->
       <div class="text-content">
         <h2>Let's Go!</h2>
-        <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Pretty simple traveling fun WordPress wanderlust darn simple organized.</p> 
-        <p>Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p>
+        <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Pretty
+          simple traveling fun WordPress wanderlust darn simple organized.</p>
+        <p>Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website
+          theme.</p>
       </div>
       <div class="img-content">
         <img src="img/adventure.jpg" alt="Let's go on an adventure!">
       </div>
     </section>
+
+    <!-- Content Piece 2 -->
     <section class="content-section inverse-content">
       <div class="img-content">
-          <img src="img/fun.jpg" class="img-fluid rounded" alt="Lets have fun!">
+        <img src="img/fun.jpg" class="img-fluid rounded" alt="Lets have fun!">
       </div>
       <div class="text-content">
         <h2>Adventure Awaits</h2>
-        <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Pretty simple traveling fun WordPress wanderlust darn simple organized.</p> 
-        <p>Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p>
+        <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Pretty
+          simple traveling fun WordPress wanderlust darn simple organized.</p>
+        <p>Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website
+          theme.</p>
       </div>
-     
     </section>
+    <!-- End of Content Section -->
+
+    <!-- Start of Destination Section -->
     <section class="content-destination">
       <h2>Pick Your Destination</h2>
-      <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
+      <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign.
+        Traveler blogger website design expedition clean excursion traveling.</p>
       <img src="img/destination.jpg" alt="Second slide">
     </section>
-    <section class="content-pick">
+    <!-- End of Destination Section -->
 
+    <!-- Start of Pick Destination Section -->
+    <section class="content-pick">
+      <!-- Destination 1 -->
       <div class="destination">
         <h4>Fun In The Sun</h4>
-        <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
+        <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign.
+          Traveler blogger website design expedition clean excursion traveling.</p>
         <div class="btn">Sign Me Up!</div>
       </div>
+
+      <!-- Destination 2 -->
       <div class="destination">
         <h4>Mountain Excursion</h4>
-        <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
+        <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign.
+          Traveler blogger website design expedition clean excursion traveling.</p>
         <div class="btn">Sign Me Up!</div>
       </div>
+
+      <!-- Destination 3 -->
       <div class="destination">
         <h4>Island Getaway</h4>
-        <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
+        <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign.
+          Traveler blogger website design expedition clean excursion traveling.</p>
         <div class="btn">Sign Me Up!</div>
       </div>
     </section>
-  </div><!-- container -->
+    <!-- End of Pick Destination Section -->
 
+    <!-- Start of Form Section -->
+    <section class="content-form">
+      <form action="#" method="post">
+
+        <!-- Select Destination -->
+        <div class>
+          <label for="destination-select">Choose your destination:</label>
+          <select id="destination-select">
+            <option value=""> Please choose an option </option>
+            <option value="fun-in-the-sun">Fun In The Sun</option>
+            <option value="mountain-excursion">Mountain Excursion</option>
+            <option value="island-getaway">Island Getaway</option>
+          </select>
+        </div>
+
+        <!-- Enter Name -->
+        <div>
+          <label for="name">Name </label>
+          <input type="text" id="name" name="user_name">
+        </div>
+
+        <!-- Enter Email -->
+        <div>
+          <label for="mail">E-mail </label>
+          <input type="email" id="mail" name="user_mail">
+        </div>
+
+        <!-- Enter Phone -->
+        <div>
+          <label for="phone">Phone </label>
+          <input type="text" id="phone" name="phone">
+        </div>
+
+        <!-- Enter Message -->
+        <div>
+          <label for="msg">Special Instructions </label>
+          <textarea id="msg" name="user_message"></textarea>
+        </div>
+
+        <!-- Submit -->
+        <div class="btn">
+          <button type="submit">Submit!</button>
+        </div>
+      </form>
+    </section>
+    <!-- End of Form Section -->
+
+  </div>
+  <!-- End of Home Container -->
+
+  <!-- Start of Footer -->
   <footer class="footer">
     <p>Copyright Fun Bus 2018</p>
   </footer>
+  <!-- End of Footer -->
 
 </body>
+
 </html>

@@ -1,9 +1,14 @@
+// Global Styles
 * {
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
+:root {
+	font-size: @defaultFontSize;
+  
+	@media @mobile {
+		font-size: @mobileFontSize;
+	}
 }
 
 html, body {
@@ -16,6 +21,7 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-size: 4rem;
+  
 }
 
 h2 {
@@ -32,6 +38,10 @@ p {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
+}
+
+a {
+  font-size: 1.3rem;
 }
 
 img {

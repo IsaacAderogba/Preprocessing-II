@@ -1,13 +1,24 @@
+// Home Page Styles
 .home {
+  padding: 0 3.2rem;
 
+  // Hero
+  .hero {
+    border-bottom: 2px dashed @navigation-border;
+    padding-bottom: 0.8rem;
+
+    h2 {
+      margin-top: 1.6rem;
+    }
+  }
+
+  // Content Section
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -21,8 +32,17 @@
         border-radius: 10px;
       }
     }
+
+    @media @mobile {
+      flex-direction: column;
+
+      .img-content, .text-content {
+        width: 100%;
+      }
+    }
   }
 
+  // Content Section - Inverse Content
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
@@ -36,8 +56,13 @@
       padding-right: 1%;
       padding-left: 0;
     }
+
+    @media @mobile {
+      flex-direction: column-reverse;
+    }
   }
 
+  // Content Destination Section
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
@@ -45,8 +70,13 @@
     img {
       border-radius: 10px;
     }
+
+    @media @mobile {
+      width: 100%;
+    }
   }
 
+  // Content Pick - Destinations
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
@@ -57,5 +87,71 @@
       width: 30%;
       margin-bottom: 30px;
     }
+
+    .destination .btn {
+      .btn-mixin(@eastern-blue, @shark);
+    }
+
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+
+      .destination {
+        width: 85%;
+      }
+    }
   }
-}// home
+
+
+// form section
+  form {
+    margin: 0 auto;
+    width: 100%;
+
+    padding: 3.2rem;
+    border: 2px dashed @navigation-border;
+    border-radius: 1.6rem;
+    margin-bottom: 3.2rem;
+  }
+  
+  form div + div {
+    margin-top: 1.6rem;
+  }
+  
+  label {
+    display: block;
+    font-family: 'Indie Flower', cursive;
+    font-size: 2.4rem;
+    margin-bottom: 0.8rem;
+  }
+
+  input, textarea , #destination-select {
+    font: 1.6rem 'Roboto';
+    width: 100%;
+    border: 1px solid @shark;
+    border-radius: 0.4rem;
+  }
+
+  input:focus, textarea:focus {
+    border-color: @eastern-blue;
+  }
+  
+  textarea {
+    vertical-align: top;
+    height: 12.8rem;
+  }
+  
+  button {
+       font-size: 1.6rem;
+       padding: 1.6rem 2.4rem;
+       background-color: @eastern-blue;
+       color: @white;
+       text-align: center;
+       border-radius: 1.2rem;
+       width: 100%;
+   
+       &:hover {
+           background-color: darken(@shark, 5%);
+       }
+  }
+}

@@ -1,1 +1,13 @@
-// Mixins in here
+// Mixins
+.btn-mixin(@color, @highlightColor) {
+    font-size: 1.6rem;
+    padding: 1.6rem 2.4rem;
+    background-color: @color;
+    color: @white;
+    text-align: center;
+    border-radius: 1.2rem;
+
+    &:hover {
+        background-color: darken(@highlightColor, 5%);
+    }
+}
